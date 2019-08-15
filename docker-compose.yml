@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+  api:
+    build: .
+    ports:
+      - 8080:8080
+    links:
+      - mongo
+    restart: on-failure
+  mongo:
+    image: mongo:4.0.10
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./db_data:/data/db

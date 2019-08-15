@@ -1,0 +1,16 @@
+aiohttp==3.5.4
+motor==2.0.0
+umongo==2.0.3
+pymongo==3.8.0
+dnspython==1.16.0
+python-json-logger==0.1.11
+
+# tests
+mypy==0.711
+flake8==3.7.7
+pytest==5.0.0
+pytest-cov==2.7.1
+
+# dev
+autopep8==1.4.4
+watchdog==0.9.0
